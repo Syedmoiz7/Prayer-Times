@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <img src="./Images/344981.jpg" alt="">
+        <div id="heading">
+            <h1>Prayer Timings</h1>
+        </div>
+        <div id="input">
+            <form onsubmit="getTime() ; return false ">
+                <input type="text" name="" id="city" placeholder="Enter Your City"> &nbsp; &nbsp;
+                <input type="text" name="" id="country" placeholder="Enter Your Country">
+                <button hidden>Check</button>
+
+            </form>
+        </div>
+        <div id="boxex">
+            <div id="fajr" class="timings"></div>
+            <div id="zuhur" class="timings"></div>
+            <div id="asar" class="timings"></div>
+            <div id="maghrib" class="timings"></div>
+            <div id="isha" class="timings"></div>
+        </div>
+    </div>
+</body>
+
+</html>
